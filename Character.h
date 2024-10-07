@@ -8,23 +8,21 @@
 using namespace std; 
 
 class Character {
-    public:
+    private:
     string name;
     string characterClass;
     string race;
-
-    Character() : name(""), characterClass(""), race("") {}
-    Character(string name, string characterClass, string race) : name(name), characterClass(characterClass), race(race) {}
-
+    
+    public:
     //Getters
     string getName() {return name;}
     string getClass() {return characterClass;}
     string getRace() {return race;}
 
     //Setters
-    void setName(string name) {name;}
-    void setCharacterClass(string characterClass) {characterClass;}
-    void setRace(string race) {race;}
+    void setName(string name) {this->name = name;}
+    void setClass(string characterClass) {this->characterClass = characterClass;}
+    void setRace(string race) {this->race = race;}
 
 };
 
